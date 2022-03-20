@@ -1,0 +1,723 @@
+/* Общие глобальные стили */
+
+* {
+	font-family: 'Comfortaa', cursive;
+}
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #0088cc;
+}
+
+body {
+	background: #f6f6f6;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+input {
+	padding: 10px 12px;
+	display: block;
+	width: 100%;
+	border-radius: 4px;
+	border: 1px solid #0088cc;
+	line-height: 1.5rem;
+	color: #444444;
+}
+
+
+/* Стили для шапки */
+
+header {
+	background: #0088cc;
+	height:70px;
+}
+
+header * {
+	color: #fff;
+}
+
+header h1 {
+	margin-top: 12px;
+}
+
+header h1 a {
+	color: #fff;
+}
+
+header h1 a:hover {
+	color: #fff;
+}
+
+#logo {
+	margin-top: 5px;
+	width: 55px;
+	height: 55px;
+	float: left;
+	background: url('../images/new_icon.svg') no-repeat;
+	background-position: contain;
+	filter: invert(1);
+}
+
+header ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: right;
+}
+
+header ul li {
+	float: left;
+	position: relative;
+}
+
+header ul li a {
+	display: block;
+	font-size: 1.2rem;
+	text-decoration: none;
+	padding: 22px;
+}
+
+header ul li a:hover {
+	background: #9ddef2;
+	transition: 0.5s;
+	color: #fff;
+}
+
+header ul li ul {
+	display: none;
+	position: absolute;
+	top: 71px;
+	z-index: 111;
+	text-align: center;
+
+
+	/*position: absolute;
+	top: 70px;
+	right: 0px;
+	width: ;
+	display: none;
+	 */
+}
+
+header ul li:hover > ul {
+	display: inherit;
+}
+
+header ul li ul li{
+	min-width: 170px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
+
+header ul li ul li a{
+	padding: 10px;
+	background: #fff;
+	color: #9ddef2;
+	font-size: 1.2rem;
+}
+
+header i {
+	margin-right: 8px;
+}
+
+/* СТИЛИ ДЛЯ СЛАЙДЕРА */
+
+.slider-title {
+	text-align: center;
+	padding: 30px 0;
+}
+
+.carousel {
+	height:450px;
+}
+
+.carousel-inner, .carousel-item {
+	height: 450px;
+	border-radius: 4px;
+}
+
+.carousel-caption h5{
+	font-size: 2rem;
+	font-weight: 500;
+	background: #000;
+	max-width: 100%;
+	padding: 0.3m;
+	opacity: 0.5;
+	color: #fff;
+}
+
+
+.carousel-caption-hack {
+	position: absolute;
+	right: 0%;
+	bottom: 0.05rem;
+	left: 0%;
+	padding-top: 1.25rem;
+	padding-bottom: 0rem;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+}
+
+/* Главная страница*/
+
+#container {
+	min-height: 400px;
+	width: 90%;
+	margin: 0 auto;
+    padding: 20px 0;
+
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content h2 {
+	margin: 30px 0;
+	text-align: center;
+
+}
+
+.main-content {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+    float: left;
+}
+
+.card {
+	float: left;
+    padding: 5px;
+    width: 30%;
+    border: 1px solid rgba(225, 225, 225, 0.7);
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+.card img {
+	width: 100%;
+    height: 200px;
+}
+
+.card-title {
+	text-align: center;
+	}
+
+.card-text {
+    text-align: justify;
+    
+}
+
+.btn {
+	background: #0088cc;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.btn:hover {
+	background: #9ddef2;
+	transition: 0.5s;
+	color: #0088cc;
+	border-radius: 4px;
+}
+
+/* ------------------- НОМЕРНОЙ ФОНД -----------*/
+.rooms-content {
+	display: flex;
+	flex-direction: row;
+}
+
+.rooms-content h2 {
+	margin: 30px 0;
+}
+
+.catalogList {
+    width: 75%;
+}
+
+.shopUnit {
+    float: left;
+    padding: 5px;
+    width: 30%;
+    border: 1px solid rgba(225, 225, 225, 0.7);
+    margin-right: 2%;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.shopUnit:nth-child(3n) {
+    margin-right: 0;
+}
+
+.shopUnitName {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #0088cc;
+    height: 80px;
+}
+
+.shopUnit img {
+    width: 100%;
+    height: 220px;
+}
+
+.shopUnitShortDesc {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.shopUnitPrice {
+    text-align: right;
+    padding-right: 20px;
+    margin-top: 10px;
+    color: #0088cc;
+    font-weight: bold;
+}
+
+.shopUnitMore {
+    border: none;
+    padding: 5px 15px;
+    background-color: #0088cc;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.shopUnitMore:hover {
+    color: #0088cc;
+    background-color: #9ddef2;
+}
+
+.sidebar {
+	width: 25%;
+}
+
+
+.sidebar .section {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+
+
+.sidebar .section h4 {
+	background: #0088cc;
+	color: #fff;
+}
+
+
+.sort select {
+	height: 30px;
+	width: 100%;
+	border-radius: 4px;
+	margin-top: 10px;
+	padding: 5px 5px;
+	border: 0px;
+	color: #0088cc;
+}
+
+
+.sort option {
+	height: 30px;
+	width: 100%;
+	border-radius: 4px;
+	margin-top: 10px;
+	padding: 5px 5px;
+	border: 0px;
+	color: #0088cc;
+}
+
+
+.category ul li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	border-top: 1px solid #e0e0e0;
+	position: relative;
+}
+
+.sidebar .category ul li a {
+	display: block;
+	padding: 15px 0px 15px 0px;
+	border-bottom: 1px solid #e0e0e0;
+	transition: all 0.3s;
+	text-decoration: none;
+	font-weight: 500;
+	color: #0088cc;
+	font-size: 1.2em;
+}
+
+.sidebar .category ul li a:hover {
+	padding-left: 10px;
+	transition: all 0.3s;
+}
+
+
+
+/* ------------------- СТРАНИЦА С ИНФОРМАЦИЕЙ О НОМЕРЕ -----------*/
+#singleRoom-img {
+    float: left;
+    width: 50%;
+    margin-right: 3%;
+    margin-top: 5%;
+}
+
+#singleRoom-img img {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgba(225, 225, 225, 0.7);
+}
+
+#singleRoom-content {
+    float: left;
+    width: 40%;
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 5%;
+    border-radius: 30px;
+}
+
+#singleRoom-name {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+#singleRoom-desc {
+    margin-top: 20px;
+}
+
+#singleRoom-price {
+    margin-top: 10px;
+    color: #0088cc;
+    font-weight: bold;
+}
+
+.field-items {
+	margin-top: 8px;
+}
+
+.field-items i {
+	margin-right: 8px;
+}
+
+.btn{
+	margin-top: 10px;
+}
+
+/* ------------------- ФОРМЫ -----------*/
+
+form h2 {
+	text-align: center;
+	margin: 30px;
+}
+
+form a {
+	font-size: 1.2em;
+	transition: all .3s;
+	color: #0088cc;
+	text-decoration: underline;
+	margin-left: 60px;
+}
+
+form a:hover {
+	margin-left: 55px;
+	transition: all .3s;
+	color: #0088cc;
+}
+
+form button {
+	margin-left: 16px;
+}
+
+form div.err {
+	color: red;
+	font-style: italic;
+	font-size: 0.8rem;
+}
+
+/* ----------------- ПОДВАЛ САЙТА -------------------*/
+
+footer {
+    float: left;
+    width: 100%;
+    height: 300px;
+    background: #0088cc;
+    color: #fff;
+}
+
+#footerInside {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#copyrights {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#social {
+    padding-top: 20px;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.socialItem {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+#contacts {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 340px;
+}
+
+.contactWrap {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+.contactIcon {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+#footerNav {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    width: 200px;
+}
+
+#footerNav a {
+    display: block;
+    text-align: right;
+    color: #fff;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+#footerNav a:hover {
+    color: #9ddef2;
+}
+
+/*----------- ПРОФИЛЬ ПОЛЬЗОВАТЕЛЯ -------------*/
+
+.profile-content {
+	display: flex;
+	flex-direction: row;
+}
+
+.profile-content h2 {
+	margin: 30px 0;
+}
+
+.room-info {
+    width: 75%;
+}
+
+
+.sidenavbar {
+	width: 25%;
+}
+
+
+.sidenavbar .section {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+
+
+.sidenavbar .section h4 {
+	background: #0088cc;
+	color: #fff;
+}
+
+
+#user-fio {
+	height: 40px;
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px 10px;
+	border: 1px solid #e6e6e6;
+	border-radius: 10px;
+	color: #0088cc;
+	text-align: center;
+}
+
+#user-email {
+	height: 40px;
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px 10px;
+	border: 1px solid #e6e6e6;
+	border-radius: 10px;
+	color: #0088cc;
+	text-align: center;
+}
+
+#created {
+	height: 60px;
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px 10px;
+	border: 1px solid #e6e6e6;
+	border-radius: 10px;
+	color: #0088cc;
+	text-align: center;
+}
+
+
+
+.sidenavbar .history ul li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	border-top: 1px solid #e0e0e0;
+	position: relative;
+}
+
+.sidenavbar .history ul li a {
+	display: block;
+	padding: 15px 0px 15px 0px;
+	border-bottom: 1px solid #e0e0e0;
+	transition: all 0.3s;
+	text-decoration: none;
+	font-weight: 500;
+	color: #0088cc;
+	font-size: 1.2em;
+}
+
+.sidenavbar .history ul li a:hover {
+	padding-left: 10px;
+	transition: all 0.3s;
+	color: #0088cc;
+}
+
+/*------------------ МОДАЛЬНОЕ ОКНО ------------------*/
+
+#modal {
+	margin: 0;
+	padding: 20px;
+	width: 100%;
+	
+}
+
+fieldset {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #9ddef2;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #ccc;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#modal input {
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+output {
+    display: inline-block;
+    margin: 0 5px 10px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+}
+
+#modal input, output {
+    padding: 2px 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.one-third-width {
+    width: 33.3%;
+}
+.two-third-width {
+    width: 66.6%;
+}
+.half-width {
+    width: 50%;
+}
+.one-third-width,
+.two-third-width,
+.half-width {
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.one-third-width input,
+.two-third-width input {
+    width: 80%;
+}
+
+#flexbox{
+	display: flex;
+	flex-direction: row;
+}
+
+.num {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.half-width input {
+    width: 80%;
+}
+
+.half-width input[type="range"] {
+    width: 50%;
+}
+
+.output-area {
+    vertical-align: top;
+    text-align: center;
+}
+
+span {
+	color: red;
+	text-align: center;
+}
